@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f5f7; 
+  color: #1f2430;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3e6ec;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* TODO 1: Atur posisi form login di tengah halaman */
+.login-wrap {
+  /* Isi di sini */
+}
+
+/* TODO 2: Atur ukuran card login */
+.login-card {
+  /* Isi di sini */
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field input {
+  padding: 10px 12px;
+  border: 1px solid #d2d7e0;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #2f6df6;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-ghost {
+  width: auto;
+  background: transparent;
+  color: #2f6df6;
+  border: 1px solid #2f6df6;
+}
+
+.error {
+  background: #fdecec;
+  color: #b42318;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.product img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.product h3 {
+  font-size: 14px;
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.price {
+  font-weight: 700;
+  color: #2f6df6;
+}
+
+.muted {
+  color: #6b7280;
+  font-size: 13px;
+}
