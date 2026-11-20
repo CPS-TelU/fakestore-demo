@@ -1,8 +1,3 @@
-/** TODO: Next.js configuration type @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [{ protocol: "https", hostname: "fakestoreapi.com" }],
-  },
-};
+const nextConfig = {};
 
 module.exports = nextConfig;

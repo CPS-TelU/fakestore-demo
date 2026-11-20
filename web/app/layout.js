@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Fakestore Demo",
-  description: "Login and product list powered by fakestoreapi.com",
+  description: "Sign in and browse products in one simple store.",
 };
 
 export default function RootLayout({ children }) {

@@ -6,8 +6,8 @@ import { login } from "@/lib/api";
 
 export default function LoginPage() {
   const router = useRouter();
-  const [username, setUsername] = useState("mor_2314");
-  const [password, setPassword] = useState("83r5^_");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -34,8 +34,8 @@ export default function LoginPage() {
   return (
     <main className="login-wrap">
       <form className="card login-card" onSubmit={handleSubmit}>
-        <h1>Login</h1>
-        <p className="muted">Use the demo account stored in MySQL.</p>
+        <h1>Welcome back</h1>
+        <p className="muted">Sign in to continue to your account.</p>
         {error && <div className="error">{error}</div>}
         <div className="field">
           <label htmlFor="username">Username</label>
@@ -43,7 +43,9 @@ export default function LoginPage() {
             id="username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            placeholder="Enter your username"
             autoComplete="username"
+            required
           />
         </div>
         <div className="field">
@@ -53,7 +55,9 @@ export default function LoginPage() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter your password"
             autoComplete="current-password"
+            required
           />
         </div>
         <button type="submit" disabled={loading}>
